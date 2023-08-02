@@ -1,0 +1,65 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dia3;
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author CesarLopez
+ */
+public class ejercicio4 {
+    public static void main(String[] args) {
+        Scanner sp = new Scanner(System.in);
+        System.out.println("Ingrese su primer numero");
+        int numero1 = sp.nextInt();
+        System.out.println("Ingrese su segundo numero");
+        int numero2 = sp.nextInt();
+        System.out.println("Ingrese su tercer numero");
+        int numero3 = sp.nextInt();
+
+ 
+
+        //1 2 3
+        if (numero1 > numero2) {
+            if (numero1 > numero3) {
+                if (numero2 > numero3) {
+                    System.out.println(numero1 + " " + numero2 + " " + numero3);
+                } else {
+                    System.out.println(numero1 + " " + numero3 + " " + numero2);
+                }
+            } else {
+                System.out.println(numero3 + " " + numero1 + " " + numero2);
+
+ 
+
+            }
+        } else {
+            if (numero2 > numero3) {
+                if (numero1 > numero3) {
+                    System.out.println(numero2 + " " + numero1 + " " + numero3);
+                } else {
+                    System.out.println(numero2 + " " + numero3 + " " + numero1);
+                }
+            } else {
+                System.out.println(numero3 + " " + numero2 + " " + numero1);
+
+ 
+
+            }
+        }
+
+ 
+
+    }
+}
+    
+
